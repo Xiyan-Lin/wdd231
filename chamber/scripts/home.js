@@ -1,5 +1,5 @@
 // Use ES module so we can keep code organized (ensure <script type="module"> in HTML)
-const API_KEY = "YOUR_OPENWEATHERMAP_API_KEY"; // <-- 把這裡換成你的 API key
+const API_KEY = "9c491ccf419f68678e5f093b77b52dd7"; // 
 // Option A: 使用城市名稱（可改成你選的城市）
 // const CITY = "Taipei,tw";
 // Option B: 使用經緯度（更精確）
@@ -124,7 +124,7 @@ async function loadSpotlights() {
 /* init */
 document.addEventListener("DOMContentLoaded", () => {
   // Load weather only if API_KEY is set (basic check)
-  if (API_KEY && API_KEY !== "YOUR_OPENWEATHERMAP_API_KEY") {
+  if (API_KEY && API_KEY !== "") {
     fetchWeather();
   } else {
     // show hint to developer
