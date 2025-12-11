@@ -17,6 +17,10 @@ header img.logo {
     height: 50px;
 }
 
+main img {
+    height: 100px;
+}
+
 /* Navigation */
 #menu-btn {
     display: none;

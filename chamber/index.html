@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your City Chamber | Home</title>
+  <meta name="description" content="Welcome to the Your City Chamber of Commerce — connecting local businesses and community." />
+  <meta name="author" content="Your Full Name" />
+
+  <!-- Social / Open Graph (更新成你的路徑) -->
+  <meta property="og:title" content="Your City Chamber — Welcome" />
+  <meta property="og:description" content="Supporting local business and community events." />
+  <meta property="og:image" content="images/og-image.png" />
+  <meta property="og:url" content="https://yourdomain.com/chamber/index.html" />
+
+  <!-- Google Fonts: preconnect + link (不要使用 @import) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- 我這裡採用 Poppins，你可以改成想要的字體並在 href 調整 weight -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Normalize (已存在) -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <!-- 主樣式 -->
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- favicon -->
+  <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.png" alt="Chamber Logo" class="logo">
+      <div>
+        <h1>Your City Chamber</h1>
+        <p class="tag">Supporting local business & community</p>
+      </div>
+    </div>
+
+    <button id="menu-btn" aria-expanded="false">☰</button>
+
+    <nav id="main-nav" class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Welcome to Your City — Grow with Us</h2>
+        <p>Connect with local businesses, find services, and discover upcoming events in our community.</p>
+        <p>
+          <a class="cta-btn" href="join.html">Join the Chamber</a>
+          <a class="cta-outline" href="directory.html">Browse Members</a>
+        </p>
+      </div>
+      <figure class="hero-figure" aria-hidden="true">
+        <img src="images/logo.png" alt="Downtown skyline / community" />
+      </figure>
+    </section>
+
+    <!-- Current Events + Weather Row -->
+    <section class="info-row">
+      <article class="current-events">
+        <h3>Current Events</h3>
+        <ul id="events-list">
+          <!-- 你可以用 JS 或手動維護事件清單 -->
+          <li><strong>Local Food Fair</strong> — Saturday, Dec 20</li>
+          <li><strong>Small Business Workshop</strong> — Wed, Jan 7</li>
+        </ul>
+        <p><a href="events.html">View all events →</a></p>
+      </article>
+
+      <aside class="weather-module" aria-label="Local Weather">
+        <h3>Weather</h3>
+        <div id="weather-current">
+          <p class="loading">Loading weather…</p>
+        </div>
+        <div id="weather-forecast" class="forecast-grid" aria-hidden="true"></div>
+      </aside>
+    </section>
+
+    <!-- Spotlights -->
+    <section class="spotlights">
+      <h3>Member Spotlights</h3>
+      <div id="spotlight-container" class="spotlight-grid">
+        <!-- JS 將從 data/members.json 隨機載入 2-3 個 silver/gold -->
+      </div>
+      <p class="muted">Spotlights are chosen at random on every load.</p>
+    </section>
+
+    <!-- Optional: newsletter / more CTAs -->
+    <section class="newsletter">
+      <h3>Stay in touch</h3>
+      <p>Sign up for our newsletter to get event updates and member benefits.</p>
+      <form id="newsletter-form" action="#" method="post" onsubmit="return false;">
+        <input type="email" placeholder="your@email.com" aria-label="Email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-left">
+      <p>&copy; <span id="year"></span> Your City Chamber</p>
+      <p>Your Full Name | WDD 231</p>
+    </div>
+    <div class="footer-right">
+      <p>Last Modification: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+
+  <!-- 全域 JS -->
+  <script src="scripts/last_modified.js"></script>
+  <script src="scripts/home.js" type="module"></script>
+</body>
+</html>
