@@ -4,7 +4,7 @@
         "address": "100 Main St, New York",
         "phone": "555-123-4567",
         "url": "https://blueskytech.com",
-        "image": "bluesky.png",
+        "image": "../images/logo.png",
         "membership": 3,
         "description": "Leading software and cloud solutions provider."
     },
@@ -13,7 +13,7 @@
         "address": "24 Sunset Ave, New York",
         "phone": "555-987-6543",
         "url": "https://sunsetgrill.com",
-        "image": "sunsetgrill.png",
+        "image": "../images/logo.png",
         "membership": 2,
         "description": "Family dining with amazing views."
     },
@@ -22,7 +22,7 @@
         "address": "400 River Rd, New York",
         "phone": "555-333-2222",
         "url": "https://riverbank.com",
-        "image": "riverbank.png",
+        "image": "../images/logo.png",
         "membership": 1,
         "description": "Your trusted community financial partner."
     },
@@ -31,7 +31,7 @@
         "address": "24 Sunset Ave, New York",
         "phone": "555-987-6543",
         "url": "https://sunsetgrill.com",
-        "image": "sunsetgrill.png",
+        "image": "../images/logo.png",
         "membership": 2,
         "description": "Family dining with amazing views."
     },
@@ -40,7 +40,7 @@
         "address": "500 River Rd, New York",
         "phone": "555-333-3333",
         "url": "https://riverbank.com",
-        "image": "riverbank.png",
+        "image": "../images/logo.png",
         "membership": 1,
         "description": "Your trusted community financial partner."
     },
@@ -49,7 +49,7 @@
         "address": "24 Sunset Ave, New York",
         "phone": "555-987-6543",
         "url": "https://sunsetgrill.com",
-        "image": "sunsetgrill.png",
+        "image": "../images/logo.png",
         "membership": 2,
         "description": "Family dining with amazing views."
     },
@@ -58,7 +58,7 @@
         "address": "400 River Rd, New York",
         "phone": "555-333-2222",
         "url": "https://riverbank.com",
-        "image": "riverbank.png",
+        "image": "../images/logo.png",
         "membership": 1,
         "description": "Your trusted community financial partner."
     }
