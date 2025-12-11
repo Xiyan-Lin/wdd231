@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Blue Sky Technologies",
+        "address": "100 Main St, New York",
+        "phone": "555-123-4567",
+        "url": "https://blueskytech.com",
+        "image": "bluesky.png",
+        "membership": 3,
+        "description": "Leading software and cloud solutions provider."
+    },
+    {
+        "name": "Sunset Grill",
+        "address": "24 Sunset Ave, New York",
+        "phone": "555-987-6543",
+        "url": "https://sunsetgrill.com",
+        "image": "sunsetgrill.png",
+        "membership": 2,
+        "description": "Family dining with amazing views."
+    },
+    {
+        "name": "Riverbank Bank",
+        "address": "400 River Rd, New York",
+        "phone": "555-333-2222",
+        "url": "https://riverbank.com",
+        "image": "riverbank.png",
+        "membership": 1,
+        "description": "Your trusted community financial partner."
+    },
+    {
+        "name": "Sunset Ross",
+        "address": "24 Sunset Ave, New York",
+        "phone": "555-987-6543",
+        "url": "https://sunsetgrill.com",
+        "image": "sunsetgrill.png",
+        "membership": 2,
+        "description": "Family dining with amazing views."
+    },
+    {
+        "name": "Riverbank Chill",
+        "address": "500 River Rd, New York",
+        "phone": "555-333-3333",
+        "url": "https://riverbank.com",
+        "image": "riverbank.png",
+        "membership": 1,
+        "description": "Your trusted community financial partner."
+    },
+    {
+        "name": "Sunset Boss",
+        "address": "24 Sunset Ave, New York",
+        "phone": "555-987-6543",
+        "url": "https://sunsetgrill.com",
+        "image": "sunsetgrill.png",
+        "membership": 2,
+        "description": "Family dining with amazing views."
+    },
+    {
+        "name": "Riverbank Tui",
+        "address": "400 River Rd, New York",
+        "phone": "555-333-2222",
+        "url": "https://riverbank.com",
+        "image": "riverbank.png",
+        "membership": 1,
+        "description": "Your trusted community financial partner."
+    }
+]

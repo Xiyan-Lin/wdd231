@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your City Chamber of Commerce | Directory</title>
+    <meta name="description" content="Business directory for the Your City Chamber of Commerce.">
+    <meta name="author" content="Your Name">
+
+    <!-- 🟦 Facebook Open Graph Meta -->
+    <meta property="og:title" content="Your City Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore local businesses that support our community.">
+    <meta property="og:image" content="images/og-image.png">
+    <meta property="og:url" content="https://yourdomain.com/chamber/directory.html">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<header>
+    <img src="images/logo.png" class="logo" alt="Chamber Logo">
+    <h1>New Tork Chamber of Commerce</h1>
+
+    <button id="menu-btn">☰</button>
+
+    <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="directory.html" class="active">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="discover.html">Discover</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Business Directory</h2>
+
+    <!-- View Toggle Buttons -->
+    <div class="view-buttons">
+        <button id="grid-btn">Grid View</button>
+        <button id="list-btn">List View</button>
+    </div>
+
+    <!-- Member Cards Container -->
+    <section id="member-container" class="grid"></section>
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> | New York Chamber of Commerce</p>
+    <p>Xiyan Lin | WDD 231</p>
+    <p>Last Modification: <span id="last-modified"></span></p>
+</footer>
+
+<script src="js/lastModified.js"></script>
+<script src="js/directory.js"></script>
+</body>
+</html>
