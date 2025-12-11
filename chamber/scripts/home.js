@@ -27,17 +27,14 @@ menuBtn?.addEventListener("click", () => {
 ------------------------------------------------------------------------- */
 async function fetchWeather() {
   try {
-    // Example using One Call (exclude minutely,hourly,alerts). If you prefer city name,
-    // you can use current weather + 3-day forecast with different endpoints.
-    const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${LAT}&lon=${LON}&units=metric&exclude=minutely,hourly,alerts&appid=${API_KEY}`;
-    const res = await fetch(url);
-    if (!res.ok) throw new Error("Weather fetch failed: " + res.status);
-    const data = await res.json();
+    // --- 1. Current Weather ---
+    const currentURL = `https://api.openweathermap.org/data/2.5/weather?lat=${LAT}&lon=${LON}&units=metric&appid=${API_KEY}`;
+    const currentRes = await fetch(currentURL);
+    const currentData = await currentRes.json();
 
-    // Current
-    const temp = Math.round(data.current.temp);
-    const desc = data.current.weather && data.current.weather[0] ? data.current.weather[0].description : "";
-    const icon = data.current.weather && data.current.weather[0] ? data.current.weather[0].icon : "";
+    const temp = Math.round(currentData.main.temp);
+    const desc = currentData.weather[0].description;
+    const icon = currentData.weather[0].icon;
 
     weatherCurrentEl.innerHTML = `
       <div class="current-top">
@@ -45,20 +42,31 @@ async function fetchWeather() {
         <div>
           <p class="temp">${temp}°C</p>
           <p class="desc">${desc}</p>
-          <p class="location">Your City</p>
+          <p class="location">Taipei</p>
         </div>
       </div>
     `;
 
-    // Forecast: display next 3 days (skip today index 0)
+    // --- 2. 3-day forecast ---
+    const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=${LON}&units=metric&appid=${API_KEY}`;
+    const forecastRes = await fetch(forecastURL);
+    const forecastData = await forecastRes.json();
+
+    // forecast API 給的是每 3 小時 → 我們取每天中午 12:00 的數據
+    const daily = forecastData.list.filter(item => item.dt_txt.includes("12:00:00")).slice(0, 3);
+
     weatherForecastEl.innerHTML = "";
-    const days = data.daily.slice(1, 4); // next 3 days
-    days.forEach(d => {
-      const dTemp = Math.round(d.temp.day);
-      const dDesc = d.weather && d.weather[0] ? d.weather[0].main : "";
-      const dIcon = d.weather && d.weather[0] ? d.weather[0].icon : "";
+
+    daily.forEach(d => {
+      const dTemp = Math.round(d.main.temp);
+      const dDesc = d.weather[0].main;
+      const dIcon = d.weather[0].icon;
       const date = new Date(d.dt * 1000);
-      const dayName = date.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
+      const dayName = date.toLocaleDateString(undefined, {
+        weekday: "short",
+        month: "short",
+        day: "numeric"
+      });
 
       const card = document.createElement("div");
       card.className = "forecast-card";
