@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan: The Green Plate</title>
+    <style>
+        /* CSS to demonstrate selected Color Scheme and Typography */
+        :root {
+            /* Color Scheme Variables */
+            --primary-color: #38761D; /* Deep Green for Headings/Accents */
+            --secondary-color: #F1C232; /* Golden Yellow for Highlight/Buttons */
+            --background-color: #F8F4E3; /* Light Cream/Off-White for Background */
+            --text-color: #232D30; /* Dark Grey/Near Black for Body Text */
+
+            /* Typography Variables */
+            --heading-font: 'Playfair Display', serif;
+            --body-font: 'Lato', sans-serif;
+        }
+
+        body {
+            font-family: var(--body-font);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-family: var(--heading-font);
+            color: var(--secondary-color);
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-family: var(--heading-font);
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        strong {
+            color: var(--primary-color);
+        }
+
+        .scenario-list li {
+            margin-bottom: 10px;
+        }
+
+        /* Wireframe Styles - Simple visualization */
+        .wireframe-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .wireframe {
+            border: 1px dashed var(--text-color);
+            padding: 10px;
+            flex: 1 1 300px;
+            min-height: 400px;
+            box-sizing: border-box;
+            background-color: white;
+        }
+
+        .wireframe-mobile {
+            max-width: 350px;
+        }
+
+        .wf-header, .wf-footer {
+            background-color: #ccc;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .wf-nav {
+            background-color: var(--secondary-color);
+            padding: 8px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .wf-feature {
+            height: 150px;
+            background-color: #E0E0E0;
+            margin-bottom: 10px;
+            text-align: center;
+            line-height: 150px;
+        }
+
+        .wf-content {
+            border: 1px solid #777;
+            padding: 10px;
+            margin-bottom: 10px;
+            min-height: 100px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Individual Project Site Plan: The Green Plate</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Site Name</h2>
+            <p><strong>Selected Site Name:</strong> The Green Plate</p>
+            <p><strong>Reason for Selection:</strong> The name is simple, memorable, and immediately suggests vegetarian or healthy eating ("Green") while using "Plate" to convey a focus on complete meals and recipes. It implies a clean, inviting, and approachable style.</p>
+            <p><strong>Optional Domain Availability (Example):</strong> greenplate.recipes</p>
+        </section>
+
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The site serves as a comprehensive online resource dedicated to providing <strong>easy, delicious, and budget-friendly vegetarian and vegan recipes</strong>. Its core purpose is to inspire and support individuals in adopting plant-based cooking by offering organized recipes, helpful cooking tips, and meal planning guides.</p>
+        </section>
+
+        <section>
+            <h2>Scenarios (Target Audience Questions)</h2>
+            <ul class="scenario-list">
+                <li><strong>Scenario 1:</strong> "I'm new to vegetarian cooking. Where can I find simple 30-minute meals that use ingredients I already have?"</li>
+                <li><strong>Scenario 2:</strong> "My family has a severe nut allergy. Is there a way to filter or search for only vegan dessert recipes that are completely nut-free?"</li>
+                <li><strong>Scenario 3:</strong> "I need to plan dinner for the whole week. Does this site offer a feature to save my favorite recipes and generate a shopping list?"</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Color Scheme</h2>
+            <p>The scheme uses colors inspired by nature and fresh food to create a welcoming, clean, and trustworthy atmosphere.</p>
+            <ul>
+                <li><strong>Primary Color:</strong> <span style="background-color: var(--primary-color); color: white; padding: 2px 5px;">#38761D (Deep Forest Green)</span></li>
+                <ul>
+                    <li>**Usage:** All main headings (`<h1>`, `<h2>`), logo/branding, and key accents (e.g., borders, icons).</li>
+                </ul>
+                <li><strong>Secondary Color (Accent):</strong> <span style="background-color: var(--secondary-color); color: var(--text-color); padding: 2px 5px;">#F1C232 (Golden Yellow/Mustard)</span></li>
+                <ul>
+                    <li>**Usage:** Call-to-Action (CTA) buttons (e.g., "View Recipe," "Sign Up"), hover states, and decorative elements (e.g., rule lines).</li>
+                </ul>
+                <li><strong>Background Color:</strong> <span style="background-color: var(--background-color); color: var(--text-color); padding: 2px 5px;">#F8F4E3 (Light Cream/Off-White)</span></li>
+                <ul>
+                    <li>**Usage:** Primary page and content container backgrounds to provide a soft, easy-to-read surface.</li>
+                </ul>
+                <li><strong>Text Color:</strong> <span style="background-color: var(--text-color); color: var(--background-color); padding: 2px 5px;">#232D30 (Dark Charcoal Grey)</span></li>
+                <ul>
+                    <li>**Usage:** All body text, paragraph text, and general labels for high contrast and readability.</li>
+                </ul>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Typography</h2>
+            <p>The font selection balances modern readability with a touch of elegance appropriate for a food/lifestyle site.</p>
+            <ul>
+                <li><strong>Heading Font:</strong> <span style="font-family: var(--heading-font);">Playfair Display (Serif)</span></li>
+                <ul>
+                    <li>**Usage:** All main headings (`h1` through `h6`) for a classic, sophisticated look.</li>
+                </ul>
+                <li><strong>Body Font:</strong> <span style="font-family: var(--body-font);">Lato (Sans-Serif)</span></li>
+                <ul>
+                    <li>**Usage:** All paragraph text, navigation links, buttons, and descriptive text for excellent readability on all devices.</li>
+                </ul>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Wireframe (Home Page Layout)</h2>
+            <p>Simple block representations of the home page layout for mobile and larger viewports.</p>
+
+            <div class="wireframe-container">
+                <div class="wireframe wireframe-mobile">
+                    <h3>Mobile View (Small Viewport)</h3>
+                    <div class="wf-header">Logo & Menu Icon</div>
+                    <div class="wf-feature">Hero/Feature Image & Headline</div>
+                    <div class="wf-content">Featured Recipe 1 (Image/Title)</div>
+                    <div class="wf-content">Featured Recipe 2 (Image/Title)</div>
+                    <div class="wf-content">Search Bar & Filters</div>
+                    <div class="wf-footer">Contact & Social Links</div>
+                </div>
+
+                <div class="wireframe">
+                    <h3>Desktop/Tablet View (Larger Viewport)</h3>
+                    <div class="wf-header" style="display: flex; justify-content: space-between;">
+                        <span>Logo</span>
+                        <div class="wf-nav" style="width: 70%; margin: 0;">Main Navigation Links</div>
+                    </div>
+                    <div class="wf-feature">Large Hero Image & Call to Action</div>
+                    <div style="display: flex; gap: 10px;">
+                        <div class="wf-content" style="flex: 1;">Search/Filter Sidebar</div>
+                        <div style="flex: 3;">
+                            <div class="wf-content">Recipe Card 1</div>
+                            <div class="wf-content">Recipe Card 2</div>
+                            <div class="wf-content">Recipe Card 3</div>
+                        </div>
+                    </div>
+                    <div class="wf-footer">Newsletter & Footer Links</div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+</body>
+</html>
