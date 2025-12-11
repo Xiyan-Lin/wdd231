@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | The Green Plate</title>
+    <meta name="description" content="Get in touch with The Green Plate team for recipe questions, collaboration, or feedback on our vegetarian and vegan content.">
+    <meta name="author" content="Your Name">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">The Green Plate</a>
+            <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <h1>Send Us a Message</h1>
+        
+        <form action="thanks.html" method="post">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label for="fullName">Full Name*</label>
+                <input type="text" id="fullName" name="fullName" required>
+                
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Inquiry</legend>
+                
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                    <option value="" disabled selected>Select an option...</option>
+                    <option value="recipe">Recipe Question</option>
+                    <option value="feedback">Website Feedback</option>
+                    <option value="collaboration">Collaboration Inquiry</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Your Message*</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                
+                <label>
+                    <input type="checkbox" name="newsletter" value="yes"> Sign me up for the weekly recipe newsletter!
+                </label>
+            </fieldset>
+
+            <button type="submit">Submit Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> The Green Plate. All rights reserved. | <a href="attribution.html">Attributions</a></p>
+    </footer>
+</body>
+</html>

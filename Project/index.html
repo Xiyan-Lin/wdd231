@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Green Plate | Fresh Vegetarian Recipes</title>
+    <meta name="description" content="Find easy, delicious, and budget-friendly vegetarian and vegan recipes for everyday cooking. Start your plant-based journey today.">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="The Green Plate | Fresh Vegetarian Recipes">
+    <meta property="og:description" content="Inspiring plant-based meals that are quick and affordable.">
+    <meta property="og:image" content="https://yourdomain.com/images/hero.webp"> 
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">The Green Plate</a>
+            <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <div class="hero" role="banner">
+            <h1>Eat Well, Live Green</h1>
+        </div>
+
+        <section>
+            <h2>Welcome to The Green Plate</h2>
+            <p>Our mission is to make plant-based eating simple, accessible, and incredibly delicious. Whether you are fully vegan, vegetarian, or just looking to reduce your meat consumption, we provide curated recipes tailored for busy lives and budget-conscious cooks.</p>
+            <p id="user-preference">Checking user preferences...</p> 
+            <p><strong>(Note: This text above dynamically shows Local Storage functionality via JavaScript.)</strong></p>
+        </section>
+
+        <section class="home-features">
+            <h2>Featured Categories</h2>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <article style="flex: 1; min-width: 250px;">
+                    <h3>Quick Weeknight Meals</h3>
+                    <p>Recipes that take less than 30 minutes from prep to plate. Perfect for a busy schedule.</p>
+                    <a href="recipes.html" class="btn-detail" style="display: inline-block; margin-top: 10px;">Browse Quick Meals</a>
+                </article>
+                <article style="flex: 1; min-width: 250px;">
+                    <h3>Budget-Friendly Finds</h3>
+                    <p>High-nutrition, low-cost meals using pantry staples like beans, lentils, and grains.</p>
+                    <a href="recipes.html" class="btn-detail" style="display: inline-block; margin-top: 10px;">View Cheap Eats</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> The Green Plate. All rights reserved. | <a href="attribution.html">Attributions</a></p>
+    </footer>
+</body>
+</html>

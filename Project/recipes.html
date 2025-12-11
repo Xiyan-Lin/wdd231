@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes | The Green Plate</title>
+    <meta name="description" content="Explore our extensive collection of vegan and vegetarian recipes, filtered by cuisine, difficulty, and cooking time.">
+    <meta name="author" content="Your Name">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/recipes.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">The Green Plate</a>
+            <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <h1>Our Plant-Based Recipes</h1>
+        <p>Discover delicious vegan and vegetarian meals. (Displaying **Vegan** recipes using a JavaScript Array Filter.)</p>
+        
+        <section id="recipe-list">
+            <p>Loading recipes... Please wait.</p>
+        </section>
+
+        <div id="recipe-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal-content">
+                <span class="close-btn" aria-label="Close modal">&times;</span>
+                <h2 id="modal-title">Recipe Details</h2>
+                <div id="modal-description">
+                    <p>Details will be loaded here dynamically.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> The Green Plate. All rights reserved. | <a href="attribution.html">Attributions</a></p>
+    </footer>
+</body>
+</html>

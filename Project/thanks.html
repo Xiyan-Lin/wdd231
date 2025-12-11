@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | The Green Plate</title>
+    <meta name="description" content="Thank you for contacting The Green Plate. Your submission has been received.">
+    <meta name="author" content="Your Name">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">The Green Plate</a>
+            <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <h1>Thank You!</h1>
+        <p>Your message has been successfully received. We will get back to you within 48 hours.</p>
+<!--
+        <h2>Summary of Submission (Demonstrating Form Data Display)</h2>
+        <div id="form-data-display" style="border: 1px dashed #ccc; padding: 15px; background-color: white;">
+            <script>
+                // JavaScript to display submitted form data
+                document.addEventListener('DOMContentLoaded', () => {
+                    const params = new URLSearchParams(window.location.search);
+                    const display = document.getElementById('form-data-display');
+                    
+                    if (params.size === 0) {
+                        display.innerHTML = "<p>No form data was submitted via GET request.</p>";
+                        // Note: For POST, you would need server-side processing, but for this course's requirement, 
+                        // we can manually mock the display for demonstration if needed, or rely on the query string display.
+                    } else {
+                        let html = '<ul>';
+                        for (const [key, value] of params.entries()) {
+                            // Using Template Literals to display data properties
+                            html += `<li><strong>${key}:</strong> ${value || '[N/A]'}</li>`;
+                        }
+                        html += '</ul>';
+                        display.innerHTML = html;
+                    }
+                });
+            </script>
+            <p><strong>Note:</strong> Since the form uses `method="post"`, the data is not visible in the URL bar (query string). To fully display POST data, a server is required. This page confirms submission and uses client-side JS to show how submitted data *properties* would be handled.</p>
+        </div>
+    -->       
+        <p><a href="index.html" class="btn-detail">Return to Home</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> The Green Plate. All rights reserved. | <a href="attribution.html">Attributions</a></p>
+    </footer>
+</body>
+</html>
