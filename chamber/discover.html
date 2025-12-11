@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>New York Chamber — Discover</title>
+  <meta name="description" content="Discover attractions, businesses, and places of interest in Your City.">
+  <!-- Social / Open Graph (更新成你的路徑) -->
+  <meta property="og:title" content="New York Chamber — Discover" />
+  <meta property="og:description" content="We are Supporting local business and community events." />
+  <meta property="og:image" content="https://xiyan-lin.github.io/wdd231/chamber/images/chamber-hero.jpg">
+  <meta property="og:url" content="https://yourdomain.com/chamber/index.html" />
+  <!-- Google Fonts (if used elsewhere) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- page-specific styles can go in styles.css or a medium.css if you prefer -->
+</head>
+<body>
+  <!-- header/navigation (same as other pages) -->
+  <header class="site-header">
+    <div class="brand">
+      <img class="logo" src="images/logo.png" alt="Chamber Logo">
+      <div>
+        <h1>Your City Chamber</h1>
+        <p class="tag">Explore the region that supports business & life</p>
+      </div>
+    </div>
+
+    <button id="menu-btn" aria-expanded="false">☰</button>
+    <nav id="main-nav" class="nav">
+      <a href="index.html">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="join.html">Join</a>
+      <a href="discover.html" class="active">Discover</a>
+    </nav>
+  </header>
+
+  <main class="discover-page">
+    <!-- visitor message (from localStorage) -->
+    <div id="visit-message" class="visit-message" role="status" aria-live="polite"></div>
+
+    <h2 class="page-title">Discover Your City — Top Places</h2>
+
+    <!-- Grid container using named grid areas -->
+    <section id="places-grid" class="places-grid" aria-label="Places of interest"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p>&copy; <span id="year"></span> Your City Chamber</p>
+    </div>
+    <div>
+      <p>Last Modification: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+
+  <!-- scripts: last_modified.js exists already; discover module below -->
+  <script src="scripts/last_modified.js" defer></script>
+  <script type="module" src="scripts/discover.js" defer></script>
+</body>
+</html>
