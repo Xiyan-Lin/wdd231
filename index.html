@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WDD 231 | Course Home Page</title>
+  <meta name="description" content="WDD 231 Course Home Page">
+  <meta name="author" content="Your Name">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+<header>
+  <div class="header-content">
+    <img src="images/logo.svg" alt="Site Logo">
+    <span class="name">Your Name</span>
+    <button id="menu" aria-label="Menu"></button>
+  </div>
+
+  <nav id="nav">
+    <a href="index.html" class="active">Home</a>
+    <a href="chamber/index.html">Chamber</a>
+    <a href="#">Final</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Home</h1>
+
+  <section>
+    <h2>About Me</h2>
+    <p>This page demonstrates prerequisite HTML, CSS, and JavaScript skills.</p>
+  </section>
+
+  <section>
+    <h2>Certificate Courses</h2>
+
+    <div class="filters">
+      <button data-filter="all">All</button>
+      <button data-filter="wdd">WDD</button>
+      <button data-filter="cse">CSE</button>
+    </div>
+
+    <div id="courses"></div>
+    <p class="credits">Total Credits: <span id="credits"></span></p>
+  </section>
+
+  <section>
+    <h2>Resources</h2>
+    <p>Additional learning resources and references.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="social">
+    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+  </div>
+
+  <p>
+    © <span id="year"></span> Your Name • Your Country/State
+  </p>
+
+  <p id="lastModified"></p>
+</footer>
+</body>
+</html>
